@@ -70,6 +70,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    align-items: center;
     position: relative;
     width: 70vw;
 }
@@ -160,7 +161,7 @@ p {
 
 .skills {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 30% 30%;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -175,7 +176,7 @@ table {
     align-items: center;
     border-radius: 15%;
     background-color: #FFF7D4;
-    height: 200px;
+    height: 90%;
 }
 
 table tr {
@@ -251,7 +252,7 @@ table tr {
 
 .contact-links > p {
     display: inline-block;
-    width: 200px;
+    width: 40%;
 }
 
 a {
@@ -287,7 +288,8 @@ a:hover {
         grid-template-columns: 100%;
         align-items: center;
         justify-content: center;
-        padding-bottom: 50px;
+        padding-bottom: 150px;
+        padding-top: 50px;
     }
 
     .image-container {
@@ -298,14 +300,14 @@ a:hover {
     }
 
     #cv_picture {
-        height: 300px;
-        width: auto;
+        height: auto;
+        width: 40%;
     }
 
     h1 {
         grid-row: 1;
         grid-column: 1;
-        font-size: 3rem;
+        font-size: 2.9rem;
     }
 
     h2 {
@@ -313,8 +315,6 @@ a:hover {
         grid-column: 1;
         font-size: 1rem;
     }
-
-
 
     .school-pictures {
         display: flex;
@@ -343,15 +343,21 @@ a:hover {
     }
 
     table {
-        width: 400px;
+        width: 90%;
+    }
+
+    .skills-pic {
+        width: 90%;
+        height: auto;
     }
 
     .contact-links {
         flex-direction: column;
+        align-items: center;
         gap: 1px;
     }
 
     .intro > div {
-        width: 70vw;
+        width: 70%;
     }
 }
