@@ -10,8 +10,6 @@ body {
 .top-container {
     display: block;
     position: relative;
-    width: 100vw;
-    height: 700px;
 }
 
 .top {
@@ -23,7 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100vw;
     height: 700px;
 }
 
@@ -43,12 +40,14 @@ h2 {
     font-size: 2rem;
 }
 
+.image-container {
+    grid-column: 3;
+}
+
 #cv_picture {
     position: relative;
     border-radius: 50%;
-    grid-column: 3;
-    width: 350px;
-    height: auto;
+    width: 80%;
 }
 
 /* Intro */
@@ -57,13 +56,11 @@ h2 {
     display: block;
     background-color: #C07F00;
     position: relative;
-    width: 100vw;
     padding-top: 30px;
 }
 
 .intro {
     position: relative;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +71,7 @@ h2 {
     flex-direction: column;
     justify-content: left;
     position: relative;
-    width: 700px;
+    width: 70vw;
 }
 
 .titles {
@@ -107,7 +104,6 @@ p {
     display: block;
     background-color: #C07F00;
     position: relative;
-    width: 100vw;
     padding-top: 30px;
 }
 
@@ -124,7 +120,8 @@ p {
     position: relative;
     text-align: center;
     display: flex;
-    gap: 4rem;
+    gap: 30px;
+    justify-content: center;
     align-items: center;
     margin: 2rem 2rem 2rem 2rem;
 }
@@ -136,19 +133,19 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20rem;
+    width: 25%;
     height: 20rem;
     background-color: #FFF7D4;
 }
 
 .card > p {
     position: relative;
-    width: 18rem;
+    width: 95%;
 }
 
 .school {
     border-radius: 15%;
-    width: 18rem;
+    width: 95%;
     height: auto;
 }
 
@@ -157,7 +154,6 @@ p {
     display: block;
     background-color: #C07F00;
     position: relative;
-    width: 100vw;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -281,4 +277,81 @@ a:hover {
 .footer > p {
     color: #FFF7D4;
     font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    .top {
+        background-image: url('images/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg');
+        display: grid;
+        grid-template-rows: 20% 20% 30% 30%;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .image-container {
+        grid-row: 4;
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    #cv_picture {
+        height: 300px;
+        width: auto;
+    }
+
+    h1 {
+        grid-row: 1;
+        grid-column: 1;
+        font-size: 3rem;
+    }
+
+    h2 {
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 1rem;
+    }
+
+
+
+    .school-pictures {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card > p {
+        height: 20%;
+    }
+    
+    .school {
+        width: 90%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        width: 400px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .intro > div {
+        width: 70vw;
+    }
 }
