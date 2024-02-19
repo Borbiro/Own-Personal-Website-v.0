@@ -285,7 +285,7 @@ a:hover {
         background-image: url('images/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg');
         display: grid;
         grid-template-rows: 20% 20% 30% 30%;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
         padding-bottom: 150px;
